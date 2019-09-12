@@ -11,7 +11,7 @@ homeTabLink.addEventListener('click', () => {
   highlightTab(homeTabLink);
   removeCurrentTab();
   createHomeTab();
-})
+});
 
 const menuTabLink = document.querySelector('#menu');
 menuTabLink.addEventListener('mouseover', () => menuTabLink.style.cursor = 'pointer');
@@ -19,7 +19,7 @@ menuTabLink.addEventListener('click', () => {
   highlightTab(menuTabLink);
   removeCurrentTab();
   createMenuTab();
-})
+});
 
 const contactTabLink = document.querySelector('#contact');
 contactTabLink.addEventListener('mouseover', () => contactTabLink.style.cursor = 'pointer');
@@ -27,7 +27,7 @@ contactTabLink.addEventListener('click', () => {
   highlightTab(contactTabLink);
   removeCurrentTab();
   createContactTab();
-})
+});
 
 function removeCurrentTab(){
   let currentTab = document.querySelector('.tab-body');
@@ -43,5 +43,4 @@ function highlightTab(tab){
 
 createHomeTab();
 highlightTab(homeTabLink);
-console.log("test")
 
